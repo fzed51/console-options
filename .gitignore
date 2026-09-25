@@ -7,3 +7,6 @@
 # Projet
 vendor/
 /.phpunit.result.cache
+
+# Logs
+*.log
