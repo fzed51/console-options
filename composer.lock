@@ -4,34 +4,35 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8a8e311fc596c4ab69a270aa2ab0c197",
+    "content-hash": "3977edaeaeaaf6c653dad3cd1e7f85a0",
     "packages": [],
     "packages-dev": [
         {
             "name": "doctrine/instantiator",
-            "version": "2.1.0",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/instantiator.git",
-                "reference": "23da848e1a2308728fe5fdddabf4be17ff9720c7"
+                "reference": "c6222283fa3f4ac679f8b9ced9a4e23f163e80d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/23da848e1a2308728fe5fdddabf4be17ff9720c7",
-                "reference": "23da848e1a2308728fe5fdddabf4be17ff9720c7",
+                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/c6222283fa3f4ac679f8b9ced9a4e23f163e80d0",
+                "reference": "c6222283fa3f4ac679f8b9ced9a4e23f163e80d0",
                 "shasum": ""
             },
             "require": {
-                "php": "^8.4"
+                "php": "^8.1"
             },
             "require-dev": {
-                "doctrine/coding-standard": "^14",
+                "doctrine/coding-standard": "^11",
                 "ext-pdo": "*",
                 "ext-phar": "*",
                 "phpbench/phpbench": "^1.2",
-                "phpstan/phpstan": "^2.1",
-                "phpstan/phpstan-phpunit": "^2.0",
-                "phpunit/phpunit": "^10.5.58"
+                "phpstan/phpstan": "^1.9.4",
+                "phpstan/phpstan-phpunit": "^1.3",
+                "phpunit/phpunit": "^9.5.27",
+                "vimeo/psalm": "^5.4"
             },
             "type": "library",
             "autoload": {
@@ -58,7 +59,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/instantiator/issues",
-                "source": "https://github.com/doctrine/instantiator/tree/2.1.0"
+                "source": "https://github.com/doctrine/instantiator/tree/2.0.0"
             },
             "funding": [
                 {
@@ -74,7 +75,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-01-05T06:47:08+00:00"
+            "time": "2022-12-30T00:23:10+00:00"
         },
         {
             "name": "myclabs/deep-copy",
@@ -192,69 +193,6 @@
                 "source": "https://github.com/nikic/PHP-Parser/tree/v5.9.0"
             },
             "time": "2026-09-13T18:51:52+00:00"
-        },
-        {
-            "name": "ocramius/package-versions",
-            "version": "2.12.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Ocramius/PackageVersions.git",
-                "reference": "18b02a63e837246e812cae72e211db32d7980019"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Ocramius/PackageVersions/zipball/18b02a63e837246e812cae72e211db32d7980019",
-                "reference": "18b02a63e837246e812cae72e211db32d7980019",
-                "shasum": ""
-            },
-            "require": {
-                "composer-runtime-api": "^2.2.0",
-                "php": "~8.4.0 || ~8.5.0"
-            },
-            "replace": {
-                "composer/package-versions-deprecated": "*"
-            },
-            "require-dev": {
-                "composer/composer": "^2.9.8",
-                "doctrine/coding-standard": "^14.0.0",
-                "ext-zip": "^1.15.0",
-                "phpunit/phpunit": "^13.1.11",
-                "psalm/plugin-phpunit": "^0.19.7",
-                "roave/infection-static-analysis-plugin": "^1.44.0",
-                "vimeo/psalm": "^6.16.1"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "PackageVersions\\": "src/PackageVersions"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Marco Pivetta",
-                    "email": "ocramius@gmail.com"
-                }
-            ],
-            "description": "Provides efficient querying for installed package versions (no runtime IO)",
-            "support": {
-                "issues": "https://github.com/Ocramius/PackageVersions/issues",
-                "source": "https://github.com/Ocramius/PackageVersions/tree/2.12.0"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/Ocramius",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/ocramius/package-versions",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2026-05-21T19:52:53+00:00"
         },
         {
             "name": "phar-io/manifest",
@@ -1988,8 +1926,11 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": "^8.1"
+        "php": "^8.2"
     },
     "platform-dev": {},
+    "platform-overrides": {
+        "php": "8.2.0"
+    },
     "plugin-api-version": "2.6.0"
 }
